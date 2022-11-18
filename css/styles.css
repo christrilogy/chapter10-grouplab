@@ -22,13 +22,20 @@ img {
 }
 
 /*Style rule for mobile viewpoint*/
+.mobile{
+  display: block;
+}
+
+#nav-links{
+  display: none;
+}
 
 
 /* Style rules for header content */
-header h1 {
+ h1 {
     text-align: center;
     color: #ff9900;
-    font-family: 'Barlow semi Condense', Arimo;
+    font-family: "Barlow semi Condense", "Arimo";
     padding: 5%;
     font-size: 3em;
 }
@@ -39,24 +46,6 @@ nav {
     border-bottom: 1px solid ;
 }
 
-nav ul {
-    text-align: center;
-    text-decoration: none;
-}
-
-nav li {
-    font-size: 1em;
-    font-family: 'Barlow semi Condensed', 'Arimo';
-    font-weight: bold;
-    padding: 3%;
-    display: inline-block;
-}
-
-nav li a {
-    display: block;
-    color: #000000;
-    text-decoration: none;
-}
 .mobile-nav a {
   color: #fff;
   text-align: center;
@@ -80,6 +69,12 @@ nav li a {
   width: 40px;
   background-color: #2a1f14;
 }
+
+.tab-desk{
+  display: none;
+}
+
+
 /* Style rules for main content */
 main {
     padding: 2%;
@@ -142,7 +137,7 @@ footer {
   display: block;
 }
 
-.mobile {
+.mobile{
   display: none;
 }
 /* Tablet Viewport: Style rule for header content */
@@ -154,12 +149,17 @@ nav li {
   display: inline-block;
   font-size: 1.25em;
   border-top: none;
+  font-family: "Barlow semi Condensed", "Arimo";
+  font-weight: bold;
 }
 nav li a {
   padding: 0.5em;
   display: block;
   color: #fff;
   text-align: center;
+  text-decoration: none;
+  display: block;
+  color: #000000;
   text-decoration: none;
 }
 nav li:last-child {
@@ -171,11 +171,22 @@ nav li {
   padding-left: 0.5em;
   padding-right: 0.5em;
     }
+
+nav ul {
+        text-align: center;
+        text-decoration: none;
+    }
   }
 
 /* media query for Desktop Viewport */
 @media screen and (min-width: 769px) , print {
 
+  .mobile{
+    display: none;
+  }
+.mobile-nav{
+  display: none;
+}
   .grid{
     display: grid;
     grid-template-columns: 200px 200px;
@@ -222,6 +233,7 @@ nav li a:hover {
 aside{
   grid-column: 1 / span 2;
 }
+
   /* Media Query for print */
   @media print {
     body {
@@ -234,5 +246,6 @@ html, body {
     height: 100%;
     margin: 0;
   }
-  .wrapper {
+.wrapper {
     min-height: 100%;
+  }
