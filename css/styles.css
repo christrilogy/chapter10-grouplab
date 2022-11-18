@@ -1,0 +1,238 @@
+/*
+	Student Name: Christian Morgan, Derrick Davis, Theodore Petrides
+	File Name: style.css
+	Date: 10/18/22
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul, section, article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background: linear-gradient(to right, #4bc1be, #097680 40%);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*Style rule for mobile viewpoint*/
+
+
+/* Style rules for header content */
+header h1 {
+    text-align: center;
+    color: #ff9900;
+    font-family: 'Barlow semi Condense', Arimo;
+    padding: 5%;
+    font-size: 3em;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #b3ecff;
+    border-bottom: 1px solid ;
+}
+
+nav ul {
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li {
+    font-size: 1em;
+    font-family: 'Barlow semi Condensed', 'Arimo';
+    font-weight: bold;
+    padding: 3%;
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  background-color: #2a1f14;
+}
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #fff;
+    font-family: 'Arimo', sans-serif;
+
+}
+
+main p {
+    font-size: 1.25em;
+    text-decoration: none;
+}
+section{
+  background-color: rgba(24, 52, 64, 0.3);
+  color: #000;
+  margin-top: 4%;
+  padding: 2%;
+}
+
+article{
+  margin-top: 1%;
+  padding: 2%;
+}
+
+aside{
+  background-color: rgba(24, 52, 64, 0.3) ;
+  padding: 2%;
+  margin-top: 1%;
+  color: #183440;
+  text-shadow: 4px 4px 10px #183440;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #fff;
+    padding: 1% 0;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #183440;
+
+}
+/* Media Query for tablet viewport */
+@media screen and (min-width: 550px) , print {
+
+  .grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-gap: 20px;
+  }
+  aside{
+    grid-column: 1 / span 2;
+  }
+
+/* Tablet Viewport: Show tab-desk class, hide mobile class */
+.tab-desk {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+/* Tablet Viewport: Style rule for header content */
+span.tab-desk {
+  display: inline;
+}
+/* Tablet Viewport: Style rule for nav area */
+nav li {
+  display: inline-block;
+  font-size: 1.25em;
+  border-top: none;
+}
+nav li a {
+  padding: 0.5em;
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+nav li:last-child {
+  border-right: none;
+}
+nav li {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+    }
+  }
+
+/* media query for Desktop Viewport */
+@media screen and (min-width: 769px) , print {
+
+  .grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-gap: 20px;
+  }
+  aside{
+    grid-column: 1 / span 2;
+  }
+/* Desktop Viewport: Style rule for header */
+header {
+  padding: 2%;
+}
+/* Desktop Viewport: Style rules for nav area */
+nav li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+nav li a:hover {
+  color: #Fff;
+  background-color: #1E355E;
+}
+/* Desktop Viewport: Style rules for main content */
+#info ul {
+  margin-left: 5%;
+}
+  main h3 {
+    font-size: 1.5em;
+  }
+  .col-content {
+    width: 50%;
+    float: left;
+    padding: 1.5%;
+  }
+}
+/* media query for Large Desktop Viewport */
+
+.grid{
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-gap: 20px;
+}
+aside{
+  grid-column: 1 / span 2;
+}
+  /* Media Query for print */
+  @media print {
+    body {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
